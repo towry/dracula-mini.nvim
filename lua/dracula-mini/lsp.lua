@@ -1,9 +1,9 @@
 local utils = require("dracula-mini.utils")
 local lsp = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function lsp.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     -- LspReferenceText = { bg = c.fg_gutter }, -- used for highlighting "text" references
     -- LspReferenceRead = { bg = c.fg_gutter }, -- used for highlighting "read" references

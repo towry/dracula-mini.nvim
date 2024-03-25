@@ -33,7 +33,7 @@ return {
   light = {
     polar_night = {
       origin = "#f8f8f2", -- nord0
-      bright = "#E8E3E5", -- nord1
+      bright = "#efefe2", -- nord1
       brighter = "#D9CFD8", -- nord2
       brightest = "#C9BACA", -- nord3
       light = "#BAB2BB", -- out of palette

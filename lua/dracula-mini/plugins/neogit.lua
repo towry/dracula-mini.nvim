@@ -1,9 +1,10 @@
 local neogit = {}
 
 local utils = require("dracula-mini.utils")
-local c = require("dracula-mini.colors").get_palette()
 
 function neogit.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     NeogitDiffAdd = { fg = c.aurora.green, bg = c.polar_night.bright },
     NeogitDiffAddHighlight = { fg = c.aurora.green, bg = c.polar_night.bright },

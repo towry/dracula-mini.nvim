@@ -1,8 +1,7 @@
 local M = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function M.highlights()
+  local c = require("dracula-mini.colors").get_palette()
   return {
     GlancePreviewNormal = { bg = c.polar_night.origin },
     GlancePreviewBorderBottom = { fg = c.polar_night.bright, bg = c.polar_night.origin },

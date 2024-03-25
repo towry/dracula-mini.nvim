@@ -1,8 +1,8 @@
 local terminal = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function terminal.apply()
+  local c = require("dracula-mini.colors").get_palette()
+
   -- dark
   vim.g.terminal_color_0 = c.polar_night.bright
   vim.g.terminal_color_8 = c.polar_night.brightest
@@ -32,8 +32,9 @@ function terminal.apply()
 end
 
 function terminal.highlights()
-  return {
+  local c = require("dracula-mini.colors").get_palette()
 
+  return {
     TermCursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- cursor in a focused terminal
     TermCursorNC = { fg = c.polar_night.brightest, bg = c.none, reverse = true }, -- cursor in an unfocused terminal
   }

@@ -1,9 +1,9 @@
 local utils = require("dracula-mini.utils")
 local notify = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function notify.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     -- rcarriga/nvim-notify
     NotifyERRORBorder = { fg = utils.darken(c.aurora.red, 0.5, c.polar_night.origin) },

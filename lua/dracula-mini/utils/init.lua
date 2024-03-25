@@ -1,7 +1,8 @@
 local utils = {}
-local c = require("dracula-mini.colors").get_palette()
 
 function utils.load(...)
+  local c = require("dracula-mini.colors").get_palette()
+
   local highlights = vim.tbl_extend("force", ...)
   local options = require("dracula-mini.config").options
   options.on_highlights(highlights, c)
@@ -11,6 +12,7 @@ function utils.load(...)
 end
 
 function utils.make_diff(color)
+  local c = require("dracula-mini.colors").get_palette()
   local options = require("dracula-mini.config").options
 
   return { fg = color, bg = c.polar_night.bright, reverse = options.diff.mode ~= "fg" }
@@ -28,7 +30,8 @@ function utils.make_error(color)
 end
 
 function utils.darken(hex, amount, bg)
-  local darken = utils.blend(hex, bg or c.polar_night.origin, amount)
+  local c = require("dracula-mini.colors").get_palette()
+  local darken = utils.blend(hex, bg or c.polar_night.origin, amount or 0.3)
 
   local options = require("dracula-mini.config").options
   if not options.colorblind.enabled then
@@ -57,6 +60,7 @@ function utils.blend(foreground, background, alpha)
 end
 
 function utils.make_global_bg(transparent)
+  local c = require("dracula-mini.colors").get_palette()
   local options = require("dracula-mini.config").options
 
   if options.transparent and transparent then

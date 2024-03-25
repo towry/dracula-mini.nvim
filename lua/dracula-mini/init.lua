@@ -4,11 +4,13 @@ local utils = require("dracula-mini.utils")
 local M = {}
 
 function M.load(opts)
+  if vim.g.colors_name then
+    vim.cmd([[ highlight clear ]])
+  end
+
   if opts then
     require("dracula-mini.config").extend(opts)
   end
-
-  vim.cmd([[ highlight clear ]])
 
   if config.options.terminal_colors then
     require("dracula-mini.terminal").apply()
@@ -31,7 +33,8 @@ function M.load(opts)
     require("dracula-mini.plugins.diffview").highlights(),
     require("dracula-mini.plugins.neogit").highlights(),
     require("dracula-mini.plugins.glance").highlights(),
-    require("dracula-mini.plugins.mini").highlights()
+    require("dracula-mini.plugins.mini").highlights(),
+    require("dracula-mini.plugins.coc").highlights()
   )
 
   vim.g.colors_name = "dracula-mini"

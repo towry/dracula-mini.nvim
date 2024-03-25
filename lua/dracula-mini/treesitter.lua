@@ -1,9 +1,10 @@
-local c = require("dracula-mini.colors").get_palette()
 local utils = require("dracula-mini.utils")
 
 local treesitter = {}
 
 function treesitter.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   local options = require("dracula-mini.config").options
 
   return {

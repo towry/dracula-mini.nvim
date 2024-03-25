@@ -3,9 +3,8 @@ local config = require("dracula-mini.config").options.styles.bufferline
 
 local bufferline = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function bufferline.highlights()
+  local c = require("dracula-mini.colors").get_palette()
   local current_hi = vim.tbl_extend("force", { bg = c.polar_night.brighter }, config.current)
   local global_bg = utils.make_global_bg()
 

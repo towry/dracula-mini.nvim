@@ -1,8 +1,8 @@
 local git = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function git.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     -- airblade/vim-gitgutter
     GitGutterAdd = { fg = c.aurora.green },

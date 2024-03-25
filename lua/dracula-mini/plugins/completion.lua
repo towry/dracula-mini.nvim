@@ -1,8 +1,8 @@
 local cmp = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function cmp.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     CmpItemAbbrDeprecated = { fg = c.polar_night.light },
     CmpItemAbbrMatch = { fg = c.frost.ice, bold = true },

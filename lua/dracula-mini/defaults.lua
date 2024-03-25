@@ -1,15 +1,16 @@
-local c = require("dracula-mini.colors").get_palette()
 local utils = require("dracula-mini.utils")
 
 local defaluts = {}
 
 function defaluts.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   local options = require("dracula-mini.config").options
   local global_bg = utils.make_global_bg()
 
   return {
     ColorColumn = { bg = c.polar_night.bright }, -- used for the columns set with 'colorcolumn'
-    Conceal = { fg = c.none, bg = c.none }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+    Conceal = { fg = utils.darken(c.snow_storm.brighter), bg = c.none }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- the character under the cursor
     CursorIM = { fg = c.snow_storm.brighter, bg = c.none, reverse = true }, -- like Cursor, but used when in IME mode
     CursorColumn = { bg = c.polar_night.bright }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -35,8 +36,8 @@ function defaluts.highlights()
     MoreMsg = { fg = c.frost.ice }, -- |more-prompt|
     NonText = { fg = c.polar_night.brighter }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
-    NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
-    FloatBorder = { fg = c.polar_night.brightest, bg = global_bg }, -- Borders of floating windows
+    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
+    FloatBorder = { fg = c.polar_night.brightest, bg = c.polar_night.bright }, -- Borders of floating windows
     Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.
     PmenuSel = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: selected item.
     PmenuSbar = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: scrollbar.

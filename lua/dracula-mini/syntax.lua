@@ -1,9 +1,9 @@
-local c = require("dracula-mini.colors").get_palette()
 local utils = require("dracula-mini.utils")
 
 local base = {}
 
 function base.highlights()
+  local c = require("dracula-mini.colors").get_palette()
   local options = require("dracula-mini.config").options
 
   return {

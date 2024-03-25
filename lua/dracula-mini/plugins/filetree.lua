@@ -2,9 +2,10 @@ local filetree = {}
 
 local config = require("dracula-mini.config")
 local utils = require("dracula-mini.utils")
-local c = require("dracula-mini.colors").get_palette()
 
 function filetree.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   local global_bg = utils.make_global_bg()
   return {
     -- NvimTree

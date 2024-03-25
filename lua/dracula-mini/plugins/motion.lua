@@ -1,8 +1,8 @@
 local motion = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function motion.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     LeapMatch = { fg = c.polar_night.bright, bg = c.frost.polar_water, bold = true, nocombine = true },
     LeapLabelPrimary = { fg = c.polar_night.bright, bg = c.aurora.green, bold = true, nocombine = true },

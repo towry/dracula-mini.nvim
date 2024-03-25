@@ -1,8 +1,8 @@
 local ui = {}
 
-local c = require("dracula-mini.colors").get_palette()
-
 function ui.highlights()
+  local c = require("dracula-mini.colors").get_palette()
+
   return {
     -- folke/which-key.nvim
     WhichKey = { fg = c.frost.ice, bold = true },
@@ -123,6 +123,8 @@ function ui.highlights()
     IlluminatedWordText = { fg = c.none, bg = c.polar_night.brightest },
     IlluminatedWordRead = { fg = c.none, bg = c.polar_night.brightest },
     IlluminatedWordWrite = { fg = c.none, bg = c.polar_night.brightest },
+
+    TreesitterContextBottom = { underline = true, sp = c.polar_night.brightest },
   }
 end
 

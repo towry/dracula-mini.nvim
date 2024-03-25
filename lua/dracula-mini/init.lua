@@ -8,10 +8,6 @@ function M.load(opts)
     require("dracula-mini.config").extend(opts)
   end
 
-  if config.options.colorblind.enable then
-    require("dracula-mini.colors").daltonize(config.options.colorblind.severity)
-  end
-
   vim.cmd([[ highlight clear ]])
 
   if config.options.terminal_colors then
@@ -38,7 +34,7 @@ function M.load(opts)
     require("dracula-mini.plugins.mini").highlights()
   )
 
-  vim.g.colors_name = "nord"
+  vim.g.colors_name = "dracula-mini"
 end
 
 M.setup = config.setup

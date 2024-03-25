@@ -1,7 +1,7 @@
 local utils = require("dracula-mini.utils")
 local notify = {}
 
-local c = require("dracula-mini.colors").palette
+local c = require("dracula-mini.colors").get_palette()
 
 function notify.highlights()
   return {

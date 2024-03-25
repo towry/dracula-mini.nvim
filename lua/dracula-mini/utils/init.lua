@@ -1,5 +1,5 @@
 local utils = {}
-local c = require("dracula-mini.colors").palette
+local c = require("dracula-mini.colors").get_palette()
 
 function utils.load(...)
   local highlights = vim.tbl_extend("force", ...)

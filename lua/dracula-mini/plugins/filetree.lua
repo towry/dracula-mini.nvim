@@ -1,8 +1,8 @@
 local filetree = {}
 
-local config = require("nord.config")
-local utils = require("nord.utils")
-local c = require("nord.colors").palette
+local config = require("dracula-mini.config")
+local utils = require("dracula-mini.utils")
+local c = require("dracula-mini.colors").palette
 
 function filetree.highlights()
   local global_bg = utils.make_global_bg()

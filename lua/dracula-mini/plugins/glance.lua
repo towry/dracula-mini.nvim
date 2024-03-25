@@ -1,6 +1,6 @@
 local M = {}
 
-local c = require("nord.colors").palette
+local c = require("dracula-mini.colors").palette
 
 function M.highlights()
   return {

@@ -1,10 +1,10 @@
-local c = require("nord.colors").palette
-local utils = require("nord.utils")
+local c = require("dracula-mini.colors").palette
+local utils = require("dracula-mini.utils")
 
 local base = {}
 
 function base.highlights()
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
 
   return {
     Bold = { bold = true },

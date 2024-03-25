@@ -1,7 +1,7 @@
 local neogit = {}
 
-local utils = require("nord.utils")
-local c = require("nord.colors").palette
+local utils = require("dracula-mini.utils")
+local c = require("dracula-mini.colors").palette
 
 function neogit.highlights()
   return {

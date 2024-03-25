@@ -1,9 +1,9 @@
 local utils = {}
-local c = require("nord.colors").palette
+local c = require("dracula-mini.colors").palette
 
 function utils.load(...)
   local highlights = vim.tbl_extend("force", ...)
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
   options.on_highlights(highlights, c)
   for group, hl in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, hl)
@@ -11,13 +11,13 @@ function utils.load(...)
 end
 
 function utils.make_diff(color)
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
 
   return { fg = color, bg = c.polar_night.bright, reverse = options.diff.mode ~= "fg" }
 end
 
 function utils.make_error(color)
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
   if options.errors.mode == "bg" then
     return vim.tbl_extend("force", { bg = color }, options.styles.errors)
   elseif options.errors.mode == "fg" then
@@ -30,12 +30,12 @@ end
 function utils.darken(hex, amount, bg)
   local darken = utils.blend(hex, bg or c.polar_night.origin, amount)
 
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
   if not options.colorblind.enabled then
     return darken
   end
 
-  return require("nord.utils.colorblind").daltonize(darken, options.colorblind.severity)
+  return require("dracula-mini.utils.colorblind").daltonize(darken, options.colorblind.severity)
 end
 
 local function hexToRgb(color)
@@ -57,14 +57,14 @@ function utils.blend(foreground, background, alpha)
 end
 
 function utils.make_global_bg(transparent)
-  local options = require("nord.config").options
+  local options = require("dracula-mini.config").options
 
   if options.transparent and transparent then
     return c.none
   end
 
   if options.colorblind.enable and options.colorblind.preserve_background then
-    return require("nord.colors").default_bg
+    return require("dracula-mini.colors").default_bg
   end
 
   return c.polar_night.origin

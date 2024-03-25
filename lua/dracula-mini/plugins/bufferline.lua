@@ -1,9 +1,9 @@
-local utils = require("nord.utils")
-local config = require("nord.config").options.styles.bufferline
+local utils = require("dracula-mini.utils")
+local config = require("dracula-mini.config").options.styles.bufferline
 
 local bufferline = {}
 
-local c = require("nord.colors").palette
+local c = require("dracula-mini.colors").palette
 
 function bufferline.highlights()
   local current_hi = vim.tbl_extend("force", { bg = c.polar_night.brighter }, config.current)

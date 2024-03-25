@@ -1,6 +1,6 @@
 local terminal = {}
 
-local c = require("nord.colors").palette
+local c = require("dracula-mini.colors").palette
 
 function terminal.apply()
   -- dark

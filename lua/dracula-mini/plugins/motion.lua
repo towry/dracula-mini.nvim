@@ -1,6 +1,6 @@
 local motion = {}
 
-local c = require("nord.colors").palette
+local c = require("dracula-mini.colors").palette
 
 function motion.highlights()
   return {

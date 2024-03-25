@@ -1,15 +1,6 @@
-# 🖌️ nord.nvim
+# 🖌️ dracula-mini.nvim
 
-Neovim theme using the [Nord palette](https://www.nordtheme.com/) that tries to
-be as close as possible to the [official vim theme](https://github.com/arcticicestudio/nord-vim/)
-and [the official vscode theme](https://github.com/arcticicestudio/nord-visual-studio-code).
-
-> "Arctic, north-bluish clean and elegant" - arcticicestudio
-
-![2022-12-01-142011_1277x703_scrot](https://user-images.githubusercontent.com/3751019/205092735-ced8ba05-d15d-4751-9a88-17cefef5ec52.png)
-![2022-12-01-142157_1270x700_scrot](https://user-images.githubusercontent.com/3751019/205092727-a266d2c8-35fd-4272-b90f-c1f063591e58.png)
-![2022-12-01-142111_1276x700_scrot](https://user-images.githubusercontent.com/3751019/205092730-9874369f-d045-47c6-8b07-5371cf344223.png)
-![2022-12-01-142044_1265x634_scrot](https://user-images.githubusercontent.com/3751019/205092733-3aebea83-c5a8-4e96-ab2e-a4646cc9e3ea.png)
+The famous Dracula theme for NeoVim
 
 ## ✨ Features
 
@@ -60,16 +51,16 @@ Install the theme with your preferred package manager:
 ```lua
 require("lazy").setup({
   {
-    "gbprod/nord.nvim",
+    "towry/dracula-mini.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("nord").setup({})
-      vim.cmd.colorscheme("nord")
+      require("dracula-mini").setup({})
+      vim.cmd.colorscheme("dracula-mini")
     end,
   },
   install = {
-    colorscheme = { "nord" },
+    colorscheme = { "dracula-mini" },
   },
 });
 ```
@@ -80,23 +71,23 @@ Enable the colorscheme:
 
 ```vim
 " Vim Script
-colorscheme nord
+colorscheme dracula-mini
 ```
 
 ```lua
 -- Lua
-vim.cmd.colorscheme("nord")
+vim.cmd.colorscheme("dracula-mini")
 ```
 
 ## ⚙️ Configuration
 
 > ❗️ configuration needs to be set **BEFORE** loading the color scheme with
-> `colorscheme nord`
+> `colorscheme dracula-mini`
 
-Nord.nvim will use the default options, unless you call `setup`.
+dracula-mini.nvim will use the default options, unless you call `setup`.
 
 ```lua
-require("nord").setup({
+require("dracula-mini").setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
   transparent = false, -- Enable this to disable setting the background color
@@ -143,66 +134,10 @@ require("nord").setup({
 
 ## 🤝 Integrations
 
-<details>
-<summary><b>nvim-lualine/lualine.nvim</b></summary>
-To enable the `nord` theme for `Lualine`, simply specify it in your
-lualine settings:
-
-```lua
-require('lualine').setup {
-  options = {
-    -- ... your lualine config
-    theme = 'nord'
-    -- ... your lualine config
-  }
-}
-```
-
 </details>
-
-<details>
-<summary><b>dnlhc/glance.nvim</b></summary>
-Nord provide default options for `glance.nvim` to have a better integration:
-
-```lua
-require("lazy").setup({
-    {
-      "dnlhc/glance.nvim",
-      opts = require("nord.plugins.glance").make_opts({
-        folds = {
-          folded = false,
-        },
-      }),
-    }
-  }
-)
-```
-
-</details>
-
-<details>
-<summary><b>akinsho/bufferline.nvim</b></summary>
-To use this theme for `bufferline`, add this to your config:
-
-```lua
-require("bufferline").setup({
-    options = {
-        separator_style = "thin",
-    },
-    highlights = require("nord.plugins.bufferline").akinsho(),
-})
-```
 
 </details>
 
 ## 🎉 Credits
 
-- [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim): pretty good
-  Nord theme for Neovim but too far from original and requires too much
-  customisation for me.
-- [arcticicestudio/nord-visual-studio-code](https://github.com/arcticicestudio/nord-visual-studio-code): For color picking
-- [arcticicestudio/nord-vim](https://github.com/arcticicestudio/nord-vim): For
-  his years of good and loyal service.
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim): For a lot
-  of code inspiration.
-- [EdenEast/nightfox.nvim](https://github.com/EdenEast/nightfox.nvim#colorblind): For daltonization algorithm
+- [nord.nvim](https://github.com/gbprod/nord.nvim)

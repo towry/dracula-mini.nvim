@@ -1,3 +1,4 @@
+--- FIXME: change those to more simple categories, like bg, tx, cr, etc
 return {
   dark = {
     polar_night = {

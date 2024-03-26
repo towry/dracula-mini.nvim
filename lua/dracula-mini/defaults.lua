@@ -14,6 +14,8 @@ function defaluts.highlights()
     Cursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- the character under the cursor
     CursorIM = { fg = c.snow_storm.brighter, bg = c.none, reverse = true }, -- like Cursor, but used when in IME mode
     CursorColumn = { bg = c.polar_night.bright }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    -- FIXME: cursor should use colors from tx category, otherwise it may
+    -- conflict with float windows bg.
     CursorLine = { bg = c.polar_night.bright }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.frost.ice }, -- directory names (and other special names in listings)
     EndOfBuffer = { fg = c.polar_night.bright }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
@@ -36,8 +38,8 @@ function defaluts.highlights()
     MoreMsg = { fg = c.frost.ice }, -- |more-prompt|
     NonText = { fg = c.polar_night.brighter }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
-    NormalFloat = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Normal text in floating windows.
-    FloatBorder = { fg = c.polar_night.brightest, bg = c.polar_night.bright }, -- Borders of floating windows
+    NormalFloat = { fg = c.snow_storm.origin, bg = utils.darken(c.polar_night.bright, 0.2) }, -- Normal text in floating windows.
+    FloatBorder = { fg = c.polar_night.brightest, bg = utils.darken(c.polar_night.bright, 0.2) }, -- Borders of floating windows
     Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.
     PmenuSel = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: selected item.
     PmenuSbar = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: scrollbar.

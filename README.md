@@ -1,15 +1,16 @@
 # 🖌️ dracula-mini.nvim
 
-The famous Dracula theme for NeoVim
+The famous **Dracula** theme for **NeoVim**.
 
 ## ✨ Features
 
-- supports TreeSitter and LSP
-- vim terminal colors
-- **lualine** theme
+- 🌞 Supports **_Light_** mode
+- 🌳 Supports TreeSitter and LSP
+- 🎨 Vim terminal colors
 
 ### Plugin Support
 
+- [Coc](https://github.com/neoclide/coc.nvim/)
 - [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [LSP Diagnostics](https://neovim.io/doc/user/lsp.html)
 - [LSP Trouble](https://github.com/folke/lsp-trouble.nvim)
@@ -19,7 +20,7 @@ The famous Dracula theme for NeoVim
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [NeoTree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [WhichKey](https://github.com/liuchengxu/vim-which-key)
-- [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [~~Lualine~~](https://github.com/hoob3rt/lualine.nvim)
 - [Leap](https://github.com/ggandor/leap.nvim)
 - [Barbar](https://github.com/romgrk/barbar.nvim)
 - [Bufferline](https://github.com/akinsho/bufferline.nvim)

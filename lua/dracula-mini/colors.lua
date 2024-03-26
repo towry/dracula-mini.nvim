@@ -1,6 +1,7 @@
 local colors = {}
 
-colors.default_bg = "#282A36" -- nord0
+-- FIXME: remove this
+colors.default_bg = "#282A36"
 
 local caches = {}
 

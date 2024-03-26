@@ -1,8 +1,14 @@
+<p align="left">
+  <a target="_blank" href="https://github.com/towry/dracula-mini.nvim/discussions/1#discussioncomment-8903573"><img alt="preview pictures" src="https://img.shields.io/badge/😍 Click to Preview-8A2BE2" /></a>
+  <span>·</span>
+  <span><img alt="panvimdoc"
+src="https://github.com/towry/dracula-mini.nvim/actions/workflows/doc.yml/badge.svg"
+    /></span>
+</p>
+
 # 🖌️ dracula-mini.nvim
 
-<center><a target="_blank" href="https://github.com/towry/dracula-mini.nvim/discussions/1#discussioncomment-8903573"><b>🎨 Previews</b></a></center>
-
-The famous **Dracula** theme for **NeoVim**.
+The famous **Dracula** (dark/light) theme for **NeoVim**.
 
 ## ✨ Features
 

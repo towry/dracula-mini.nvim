@@ -22,7 +22,7 @@ function M.highlights()
     CocDiagnosticsWarning = { link = "DiagnosticWarn" },
     CocDiagnosticsInfo = { link = "DiagnosticInfo" },
     CocDiagnosticsHint = { link = "DiagnosticHint" },
-    CocUnusedHighlight = { fg = darken(c.snow_storm.brighter), bg = c.none, undercurl = true, bold = true },
+    CocUnusedHighlight = { fg = c.polar_night.light, bg = c.none, undercurl = true, bold = true },
 
     ["CocNotificationButton"] = { link = "PmenuSel" },
     ["CocNotificationProgress"] = { bg = c.aurora.green, fg = darken(c.aurora.green), bold = true },

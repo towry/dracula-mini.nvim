@@ -1,5 +1,7 @@
 # 🖌️ dracula-mini.nvim
 
+<center><a target="_blank" href="https://github.com/towry/dracula-mini.nvim/discussions/1#discussioncomment-8903573"><b>🎨 Previews</b></a></center>
+
 The famous **Dracula** theme for **NeoVim**.
 
 ## ✨ Features

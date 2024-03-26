@@ -22,7 +22,7 @@ function defaluts.highlights()
     ErrorMsg = { fg = c.snow_storm.origin, bg = c.aurora.red }, -- error messages on the command line
     VertSplit = { fg = options.borders and c.polar_night.bright or c.polar_night.origin, bg = c.none }, -- the column separating vertically split windows
     WinSeparator = {
-      fg = options.borders and c.polar_night.bright or c.polar_night.origin,
+      fg = options.borders and c.polar_night.light or c.polar_night.origin,
       bg = c.none,
     }, -- Separators between window splits.
     Folded = { fg = c.snow_storm.brightest, bg = c.polar_night.bright }, -- line used for closed folds
@@ -49,7 +49,7 @@ function defaluts.highlights()
     Search = options.search.theme == "vscode" and { fg = c.none, bg = utils.darken(c.frost.ice, 0.2) }
       or { fg = c.frost.ice, bg = c.none, reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     IncSearch = options.search.theme == "vscode" and { fg = c.snow_storm.origin, bg = utils.darken(c.frost.ice, 0.5) }
-      or { fg = c.snow_storm.brightest, bg = c.frost.ice }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+      or { fg = c.polar_night.bright, bg = c.frost.artic_water }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch = { link = "IncSearch" },
     SpecialKey = { fg = c.polar_night.brightest }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad = { sp = c.aurora.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.

@@ -4,7 +4,7 @@ function mini.highlights()
   local c = require("dracula-mini.colors").get_palette()
 
   return {
-    MiniIndentscopeSymbol = { fg = c.frost.artic_ocean },
+    MiniIndentscopeSymbol = { fg = c.polar_night.brighter },
     MiniIndentscopePrefix = { nocombine = true },
   }
 end

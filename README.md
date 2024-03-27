@@ -97,6 +97,7 @@ dracula-mini.nvim will use the default options, unless you call `setup`.
 
 ```lua
 require("dracula-mini").setup({
+  variant = "default", -- theme variant, 'default'|'nord'
   -- your configuration comes here
   -- or leave it empty to use the default settings
   transparent = false, -- Enable this to disable setting the background color

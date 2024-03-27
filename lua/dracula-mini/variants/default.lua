@@ -33,7 +33,7 @@ return {
   ---- https://coolors.co/contrast-checker/
   light = {
     polar_night = {
-      origin = "#f8f8f2", -- nord0
+      origin = "#fffff0", -- nord0
       bright = "#efefe2", -- nord1
       brighter = "#D9CFD8", -- nord2
       brightest = "#C9BACA", -- nord3

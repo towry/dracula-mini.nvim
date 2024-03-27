@@ -41,6 +41,20 @@ function utils.darken(hex, amount, bg)
   return require("dracula-mini.utils.colorblind").daltonize(darken, options.colorblind.severity)
 end
 
+---@param bg string
+function utils.darken_wrap(bg)
+  return function(hex, amount)
+    local darken = utils.blend(hex, bg, amount or 0.3)
+
+    local options = require("dracula-mini.config").options
+    if not options.colorblind.enabled then
+      return darken
+    end
+
+    return require("dracula-mini.utils.colorblind").daltonize(darken, options.colorblind.severity)
+  end
+end
+
 local function hexToRgb(color)
   color = string.lower(color)
   return { tonumber(color:sub(2, 3), 16), tonumber(color:sub(4, 5), 16), tonumber(color:sub(6, 7), 16) }

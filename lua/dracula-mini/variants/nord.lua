@@ -1,3 +1,5 @@
+local d = require("dracula-mini.utils").darken_wrap("#D8DEE9")
+
 return {
   dark = {
     polar_night = {
@@ -29,29 +31,29 @@ return {
   },
   light = {
     polar_night = {
-      origin = "#fafafa", -- nord0
-      bright = "#efefe2", -- nord1
-      brighter = "#D9CFD8", -- nord2
-      brightest = "#C9BACA", -- nord3
-      light = "#BAB2BB", -- out of palette
+      origin = "#ECEEF4", -- nord4
+      bright = "#E5E9F0", -- nord5
+      brighter = "#D8DEE9", -- nord6
+      brightest = "#616e88",
+      light = "#4c566a",
     },
     snow_storm = {
-      origin = "#6E87A4", -- nord4
-      brighter = "#7A9AB1", -- nord5
-      brightest = "#86ADC0", -- nord6
+      origin = "#2E3440", -- nord0
+      brighter = "#434C5E", -- nord2
+      brightest = "#4C566A", -- nord3
     },
     frost = {
-      polar_water = "#7D9493", -- nord7
-      ice = "#7097A0", -- nord8
-      artic_water = "#66858F", -- nord9
-      artic_ocean = "#4D6F7E", -- nord10
+      polar_water = d("#8FBCBB", 2), -- nord7
+      ice = d("#88C0D0", 2), -- nord8
+      artic_water = d("#81A1C1", 2), -- nord9
+      artic_ocean = d("#5E81AC", 2), -- nord10
     },
     aurora = {
-      red = "#8F4B54", -- nord11
-      orange = "#9C6560", -- nord12
-      yellow = "#A97E63", -- nord13
-      green = "#5E776D", -- nord14
-      purple = "#6F4B66", -- nord15
+      red = d("#BF616A", 2), -- nord11
+      orange = d("#D08770", 2), -- nord12
+      yellow = d("#EBCB8B", 2), -- nord13
+      green = d("#A3BE8C", 2), -- nord14
+      purple = d("#B48EAD", 2), -- nord15
     },
     none = "NONE",
   },

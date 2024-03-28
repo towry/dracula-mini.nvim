@@ -82,8 +82,8 @@ function defaluts.highlights()
     healthError = { fg = c.aurora.red },
     healthSuccess = { fg = c.aurora.green },
     healthWarning = { fg = c.aurora.yellow },
-    WinBar = { bg = c.polar_night.origin },
-    WinBarNC = { bg = c.polar_night.origin },
+    WinBar = { bg = c.polar_night.origin, fg = c.snow_storm.brighter, underline = true, sp = c.polar_night.brightest },
+    WinBarNC = { bg = c.polar_night.origin, fg = c.snow_storm.brightest, underline = true, sp = c.polar_night.bright },
   }
 end
 

@@ -124,7 +124,8 @@ function ui.highlights()
     IlluminatedWordRead = { fg = c.none, bg = c.polar_night.brightest },
     IlluminatedWordWrite = { fg = c.none, bg = c.polar_night.brightest },
 
-    TreesitterContextBottom = { underline = true, sp = c.polar_night.brightest },
+    TreesitterContextBottom = { underline = true, bg = c.polar_night.origin, sp = c.polar_night.bright },
+    TreesitterContext = { bg = c.polar_night.origin },
   }
 end
 

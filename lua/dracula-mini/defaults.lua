@@ -58,9 +58,9 @@ function defaluts.highlights()
     SpellRare = { fg = c.snow_storm.brightest, bg = global_bg, sp = c.snow_storm.brightest, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     StatusLine = { fg = c.snow_storm.brighest, bg = c.polar_night.brighter }, -- status line of current window
     StatusLineNC = { fg = c.snow_storm.origin, bg = c.polar_night.brightest }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-    TabLine = { fg = c.snow_storm.origin, bg = c.fg_gutter }, -- tab pages line, not active tab page label
-    TabLineFill = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- tab pages line, where there are no labels
-    TabLineSel = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- tab pages line, active tab page label
+    TabLine = { fg = c.snow_storm.origin, bg = utils.darken(c.polar_night.bright, 1.2) }, -- tab pages line, not active tab page label
+    TabLineFill = { fg = c.snow_storm.origin, bg = utils.darken(c.polar_night.bright, 0.8) }, -- tab pages line, where there are no labels
+    TabLineSel = { fg = c.frost.ice, bg = utils.darken(c.polar_night.bright, 1.6) }, -- tab pages line, active tab page label
     Title = { fg = c.snow_storm.origin, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection
     VisualNOS = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection when vim is "Not Owning the Selection".
@@ -82,8 +82,20 @@ function defaluts.highlights()
     healthError = { fg = c.aurora.red },
     healthSuccess = { fg = c.aurora.green },
     healthWarning = { fg = c.aurora.yellow },
-    WinBar = { bg = c.polar_night.origin, fg = c.polar_night.brighter, underline = false, italic = true, sp = c.polar_night.brightest },
-    WinBarNC = { bg = c.polar_night.origin, fg = c.polar_night.brighter, underline = false, italic = true, sp = c.polar_night.bright },
+    WinBar = {
+      bg = c.polar_night.origin,
+      fg = c.polar_night.brighter,
+      underline = false,
+      italic = true,
+      sp = c.polar_night.brightest,
+    },
+    WinBarNC = {
+      bg = c.polar_night.origin,
+      fg = c.polar_night.brighter,
+      underline = false,
+      italic = true,
+      sp = c.polar_night.bright,
+    },
   }
 end
 

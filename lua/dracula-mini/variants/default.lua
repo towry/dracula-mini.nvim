@@ -27,6 +27,7 @@ return {
       yellow = "#F1FA8C", -- nord13
       green = "#A3BE8C", -- nord14
       purple = "#BD93F9", -- nord15
+      pink = "#ff92df",
     },
     none = "NONE",
   },
@@ -57,6 +58,7 @@ return {
       yellow = "#A7B515", -- nord13
       green = "#3E8500", -- nord14
       purple = "#895EC2", -- nord15
+      pink = "#ff79c6",
     },
     none = "NONE",
   },
